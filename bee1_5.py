@@ -25,8 +25,10 @@ def gravity():
     global speed
     speed=speed+g
     bee.y=bee.y+speed
- 
- 
+
+#Add code to create the flap() function and set speed variable to -10 in it    
+    
+    
 while True:    
     screen.fill((50,150,255))
     screen.blit(images["bg"],[0,0])
@@ -34,7 +36,8 @@ while True:
         if event.type == pygame.QUIT: 
             pygame.quit()
             sys.exit()
-    
+        #Add code to check if space key is pressed and then call the flap() function
+        
     gravity()
     
     groundx =groundx-5
